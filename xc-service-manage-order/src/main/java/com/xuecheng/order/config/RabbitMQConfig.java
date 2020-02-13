@@ -26,7 +26,7 @@ public class RabbitMQConfig {
     //交换机
     public static final String EX_LEARNING_ADDCHOOSECOURSE="ex_learning_addchoosecourse";
 
-    //完成添加选课消息队列a
+    //完成添加选课消息队列
     @Value("${xc-service-manage-order.mq.Queue}")
     public String XC_LEARNING_FINISHADDCHOOSECOURSE;
     //队列Bean的名称
