@@ -1,11 +1,18 @@
 package com.xuecheng.auth.service.impl;
 
 import com.alibaba.fastjson.JSON;
+import com.xuecheng.auth.client.UcenterClient;
 import com.xuecheng.auth.service.AuthService;
 import com.xuecheng.framework.client.XcServiceList;
+import com.xuecheng.framework.domain.learning.respoonse.LearningCode;
 import com.xuecheng.framework.domain.ucenter.ext.AuthToken;
+import com.xuecheng.framework.domain.ucenter.request.LoginRequest;
 import com.xuecheng.framework.domain.ucenter.response.AuthCode;
+import com.xuecheng.framework.domain.ucenter.response.LoginResult;
+import com.xuecheng.framework.domain.ucenter.response.UcenterCode;
 import com.xuecheng.framework.exception.ExceptionCast;
+import com.xuecheng.framework.model.response.CommonCode;
+import com.xuecheng.framework.model.response.ResponseResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.ServiceInstance;
@@ -19,6 +26,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.Base64Utils;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
+import org.springframework.util.StringUtils;
 import org.springframework.web.client.DefaultResponseErrorHandler;
 import org.springframework.web.client.RestTemplate;
 
@@ -35,6 +43,8 @@ public class AuthServiceImpl implements AuthService {
     private RestTemplate restTemplate;
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
+    @Autowired
+    private UcenterClient ucenterClient;
     @Value("${auth.tokenValiditySeconds}")
     private int tokenValiditySeconds;
     @Override
@@ -143,5 +153,17 @@ public class AuthServiceImpl implements AuthService {
     public void clearRedis(String access_token) {
         String key = "user_token:" + access_token;
         stringRedisTemplate.delete(key);
+    }
+
+    @Override
+    //注册用户
+    public ResponseResult userrg(LoginRequest loginRequest) {
+        if (loginRequest==null|| StringUtils.isEmpty(loginRequest.getUsername())||StringUtils.isEmpty(loginRequest.getPassword())){
+            return new ResponseResult(CommonCode.INVALID_PAPAM);
+        }
+        String username = loginRequest.getUsername();
+        String password = loginRequest.getPassword();
+        ResponseResult responseResult = ucenterClient.rgUser(username, password);
+        return responseResult;
     }
 }

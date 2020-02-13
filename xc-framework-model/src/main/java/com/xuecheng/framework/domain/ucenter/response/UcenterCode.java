@@ -12,6 +12,7 @@ import lombok.ToString;
 @ToString
 public enum UcenterCode implements ResultCode {
     UCENTER_USERNAME_NONE(false,23001,"请输入账号！"),
+    UCENTER_USERNAME_Exits(false,23007,"当前用户名已存在！"),
     UCENTER_PASSWORD_NONE(false,23002,"请输入密码！"),
     UCENTER_VERIFYCODE_NONE(false,23003,"请输入验证码！"),
     UCENTER_ACCOUNT_NOTEXISTS(false,23004,"账号不存在！"),

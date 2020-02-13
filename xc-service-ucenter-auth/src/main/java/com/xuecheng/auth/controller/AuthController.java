@@ -51,7 +51,6 @@ public class AuthController implements AuthControllerApi {
         }
         String username = loginRequest.getUsername();//用户名
         String password = loginRequest.getPassword();//密码
-        //String verifycode = loginRequest.getVerifycode();//验证码
         //一：获取令牌并存入redis
         AuthToken authToken=authService.login(username,password,clientId,clientSecret);
         String access_token = authToken.getAccess_token();//身份令牌
@@ -103,5 +102,11 @@ public class AuthController implements AuthControllerApi {
         }
         String jwt_token = authToken.getJwt_token();//获取JWT令牌
         return new JwtResult(CommonCode.SUCCESS,jwt_token);
+    }
+
+    @Override
+    @PostMapping("/userrg")
+    public ResponseResult userrg(LoginRequest loginRequest) {
+        return authService.userrg(loginRequest);
     }
 }

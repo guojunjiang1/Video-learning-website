@@ -19,7 +19,7 @@ class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     public void configure(WebSecurity web) throws Exception {
         //访问该工程，放行的路径
-        web.ignoring().antMatchers("/userlogin","/userlogout","/userjwt");
+        web.ignoring().antMatchers("/userlogin","/userlogout","/userjwt","/userrg");
 
     }
     @Bean

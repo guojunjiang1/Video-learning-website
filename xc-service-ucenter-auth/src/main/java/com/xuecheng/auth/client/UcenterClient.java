@@ -3,8 +3,11 @@ package com.xuecheng.auth.client;
 
 import com.xuecheng.framework.client.XcServiceList;
 import com.xuecheng.framework.domain.ucenter.ext.XcUserExt;
+import com.xuecheng.framework.domain.ucenter.request.LoginRequest;
+import com.xuecheng.framework.model.response.ResponseResult;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 //Feign的接口（实现远程调用+客户端负载均衡（自动集成负载均衡））
@@ -12,4 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface UcenterClient {
     @GetMapping("/ucenter/getuserext")
     XcUserExt getUserext(@RequestParam("username") String username);
+
+    @PostMapping("/ucenter/rg")
+    ResponseResult rgUser(@RequestParam("username") String username,@RequestParam("password") String password);
 }

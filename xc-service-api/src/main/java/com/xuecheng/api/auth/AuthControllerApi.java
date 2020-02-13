@@ -15,4 +15,6 @@ public interface AuthControllerApi {
     ResponseResult logout();
     @ApiOperation("根据Cookie信息获取jwt令牌")
     JwtResult userjwt();
+    @ApiOperation("注册")
+    ResponseResult userrg(LoginRequest loginRequest);
 }
