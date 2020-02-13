@@ -16,6 +16,6 @@ public interface MediaUploadService {
     CheckChunkResult checkchunk(String fileMd5, Integer chunk, Integer chunkSize);
     //三：上传分块文件
     ResponseResult uploadchunk(MultipartFile file, String fileMd5, Integer chunk);
-    //四：合并分块文件并写入MongoDB
+    //四：合并分块文件并将数据写入MongoDB
     ResponseResult mergechunks(String fileMd5, String fileName, Long fileSize, String mimetype, String fileExt);
 }
