@@ -25,6 +25,11 @@ zuul:
       strip-prefix: false #true：代理转发时去掉前缀，false:代理转发时不去掉前缀
       sensitiveHeaders:  #默认zuul会屏蔽cookie，cookie不会传到下游服务，这里设置为空则取消默认的黑名单，如果设置了具体的头信息则不会传到下游服务
       #   ignoredHeaders: 默认为空表示不过虑任何头
+    manage-course-file:
+      path: /filesystem/**
+      serviceId: xc-service-base-filesystem
+      strip-prefix: false
+      sensitiveHeaders:
     xc-service-learning:
       path: /learning/**
       serviceId: xc-service-learning
