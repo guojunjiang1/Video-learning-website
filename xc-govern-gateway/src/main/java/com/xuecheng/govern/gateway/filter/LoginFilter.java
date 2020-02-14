@@ -47,7 +47,6 @@ public class LoginFilter extends ZuulFilter {
     //过滤器的内容
     @Override
     public Object run() throws ZuulException {
-        System.out.println("网关验证");
         RequestContext requestContext = RequestContext.getCurrentContext();//Zuul网关提供的
         HttpServletRequest request = requestContext.getRequest();
         HttpServletResponse response = requestContext.getResponse();

@@ -81,7 +81,6 @@ public class CourseController extends BaseController implements CourseController
         return courseService.updateCourseMarket(courseId,courseMarket);
     }
 
-    @PreAuthorize("hasAuthority('course_pic_list')")
     @Override
     @PostMapping("/coursepic/add")
     public ResponseResult addCoursePic(String courseId, String pic) {

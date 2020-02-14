@@ -60,7 +60,7 @@ public class UcenterServiceImpl implements UcenterService {
         if (xcUser!=null){
             return new ResponseResult(UcenterCode.UCENTER_USERNAME_Exits);
         }
-        String encode = bCryptPasswordEncoder.encode(password);
+        String encode = bCryptPasswordEncoder.encode(password);//对密码进行编码
         XcUser xcUser1=new XcUser();
         xcUser1.setUsername(username);
         xcUser1.setPassword(encode);

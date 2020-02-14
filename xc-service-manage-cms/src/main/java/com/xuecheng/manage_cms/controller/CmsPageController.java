@@ -27,6 +27,8 @@ public class CmsPageController implements CmsPageControllerApi {
         return cmsPageService.findList(page,size,queryPageRequest);
     }
 
+    //当用户拥有该权限时才可以访问该方法
+    @PreAuthorize("hasAuthority('cms_add')")
     @Override
     @PostMapping("/add")
     //新建页面

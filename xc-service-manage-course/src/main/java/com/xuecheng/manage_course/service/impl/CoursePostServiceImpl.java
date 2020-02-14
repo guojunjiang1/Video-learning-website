@@ -156,6 +156,7 @@ public class CoursePostServiceImpl implements CoursePostService {
         List<TeachplanMedia> list = teachPlanMediaRepository.findByCourseId(courseId);
         //删除掉Pub表中该课程的课程计划与对应视频的信息
         teachPlanMediaPubRepository.deleteByCourseId(courseId);
+        //将查询出的最新课程计划视频信息插入到pub表中
         List<TeachplanMediaPub> list1=new ArrayList<>();
         for (TeachplanMedia xx:list){
             TeachplanMediaPub teachplanMediaPub=new TeachplanMediaPub();
@@ -163,7 +164,6 @@ public class CoursePostServiceImpl implements CoursePostService {
             teachplanMediaPub.setTimeStamp(new Date());
             list1.add(teachplanMediaPub);
         }
-        //将查询出的最新课程计划视频信息插入到pub表中
         teachPlanMediaPubRepository.saveAll(list1);
     }
 }

@@ -91,6 +91,7 @@ public class FileSystemServiceImpl implements FileSystemService {
             String originalFilename = multipartFile.getOriginalFilename();
             //得到文件扩展名
             String ext = originalFilename.substring(originalFilename.lastIndexOf(".") + 1);
+            //上传
             String fileId = storageClient1.upload_file1(bytes, ext, null);
             return fileId;
         } catch (Exception e) {
