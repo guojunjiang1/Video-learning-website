@@ -106,6 +106,7 @@ public class AuthController implements AuthControllerApi {
 
     @Override
     @PostMapping("/userrg")
+    //用户注册
     public ResponseResult userrg(LoginRequest loginRequest) {
         return authService.userrg(loginRequest);
     }
