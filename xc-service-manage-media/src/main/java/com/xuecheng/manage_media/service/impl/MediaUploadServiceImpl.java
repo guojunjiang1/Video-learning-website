@@ -56,7 +56,7 @@ public class MediaUploadServiceImpl implements MediaUploadService {
     }
 
     @Override
-    //查看文件是否存在
+    //一：查看文件是否存在
     public ResponseResult register(String fileMd5, String fileName, Long fileSize, String mimetype, String fileExt) {
         //一：查看本地路径中是否存在
         String filePath = getFilePath(fileMd5, fileExt);//文件的路径
@@ -78,7 +78,7 @@ public class MediaUploadServiceImpl implements MediaUploadService {
     }
 
     @Override
-    //查看块文件是否存在
+    //二：查看块文件是否存在
     public CheckChunkResult checkchunk(String fileMd5, Integer chunk, Integer chunkSize) {
         //一：查看块文件路径是否存在
         String filePath1 = this.getFilePath1(fileMd5);//块文件目录
@@ -98,7 +98,7 @@ public class MediaUploadServiceImpl implements MediaUploadService {
     }
 
     @Override
-    //上传块文件
+    //三：上传块文件
     public ResponseResult uploadchunk(MultipartFile file, String fileMd5, Integer chunk) {
         InputStream inputStream=null;
         FileOutputStream outputStream=null;
@@ -130,7 +130,7 @@ public class MediaUploadServiceImpl implements MediaUploadService {
     }
 
     @Override
-    //合并分块文件
+    //四：合并分块文件
     public ResponseResult mergechunks(String fileMd5, String fileName, Long fileSize, String mimetype, String fileExt) {
         //一：合并分块文件
         String filePath1 = this.getFilePath1(fileMd5);//分块文件目录
