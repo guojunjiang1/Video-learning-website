@@ -18,9 +18,7 @@ public class CourseLearningServiceImpl implements CourseLearningService {
     @Override
     //根据课程计划id获取其对应的媒资视频信息
     public GetMediaResult getmedia(String courseId,String teachplanId) {
-        //一：校验当前用户是否有学习该课程资格
-
-        //二：远程调用search工程获取课程计划对应的媒资视频
+        //远程调用search工程获取课程计划对应的媒资视频
         if (StringUtils.isEmpty(teachplanId)){
             ExceptionCast.cast(CommonCode.INVALID_PAPAM);
         }
