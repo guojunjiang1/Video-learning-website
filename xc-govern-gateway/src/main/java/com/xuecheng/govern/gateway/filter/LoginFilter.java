@@ -69,6 +69,7 @@ public class LoginFilter extends ZuulFilter {
             this.access_denied(requestContext,response);
             return null;
         }
+        //放行
         return null;
     }
 
