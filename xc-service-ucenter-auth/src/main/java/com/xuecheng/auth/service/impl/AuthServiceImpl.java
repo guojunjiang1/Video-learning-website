@@ -48,6 +48,7 @@ public class AuthServiceImpl implements AuthService {
     @Value("${auth.tokenValiditySeconds}")
     private int tokenValiditySeconds;
     @Override
+    //用户登录
     //获取令牌，将令牌存入redis
     public AuthToken login(String username, String password, String clientId, String clientSecret) {
         //一：密码模式获取令牌
