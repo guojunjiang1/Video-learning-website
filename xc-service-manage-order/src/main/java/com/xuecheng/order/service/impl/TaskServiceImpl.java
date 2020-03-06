@@ -57,13 +57,8 @@ public class TaskServiceImpl implements TaskService {
     @Override
     //乐观锁，更新version(看当前任务是否被其他工程执行了)
     public int updateVersion(XcTask xcTask) {
-        Optional<XcTask> byId = xcTaskRepository.findById(xcTask.getId());
-        if (byId.isPresent()){
-            XcTask xctask = byId.get();
-            int i = xcTaskRepository.updateTaskVersion(xctask.getId(), xctask.getVersion());
-            return i;
-        }
-        return -1;
+        int i = xcTaskRepository.updateTaskVersion(xcTask.getId(), xcTask.getVersion());
+        return i;
     }
 
     @Override
