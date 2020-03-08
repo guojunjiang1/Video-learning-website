@@ -66,7 +66,7 @@ public class UcenterServiceImpl implements UcenterService {
         xcUser1.setPassword(encode);
         xcUser1.setCreateTime(new Date());
         xcUser1.setStatus("1");
-        xcUser1.setName("游客一");
+        xcUser1.setName("学生"+username);
         xcUser1.setUtype("99999");
         xcUserRepository.save(xcUser1);
         return new ResponseResult(CommonCode.SUCCESS);
