@@ -152,7 +152,7 @@
                                     <div class="morebox" style="background: url(/static/img/widget-titBg.png) no-repeat;">
 
                                         <p class="top-tit"><a href="">Linux 达人养成记</a></p>
-                                        <p class="top-lab">传智播客</p>
+                                        <p class="top-lab">学成在线</p>
                                         <p class="top-num">2589646次播放<span>4.8分</span></p>
 
                                     </div>
@@ -164,7 +164,7 @@
                                     <div class="morebox" style="background: url(/static/img/widget-titBg.png) no-repeat;">
 
                                         <p class="top-tit"><a href="">Redis从入门到精通</a></p>
-                                        <p class="top-lab">传智播客</p>
+                                        <p class="top-lab">学成在线</p>
                                         <p class="top-num">2589646次播放<span>4.8分</span></p>
 
                                     </div>
@@ -190,7 +190,7 @@
                                     <div class="drop-down" style="height: ${firstNode.children?size * 50}px;">
                                         <ul class="list-box">
                                             <#list firstNode.children as secondNode>
-                                                <li>${secondNode.pname}</li>
+                                                <li><a href="http://ucenter.xuecheng.com:81/#/learning/${courseBase.id}/${secondNode.id}">${secondNode.pname}</a></li>
                                             </#list>
                                         </ul>
                                     </div>
@@ -252,7 +252,7 @@
                                     <div class="morebox" style="background: url(/static/img/widget-titBg.png) no-repeat;">
 
                                         <p class="top-tit"><a href="">Linux 达人养成记</a></p>
-                                        <p class="top-lab">传智播客</p>
+                                        <p class="top-lab">学成在线</p>
                                         <p class="top-num">2589646次播放<span>4.8分</span></p>
 
                                     </div>
@@ -264,7 +264,7 @@
                                     <div class="morebox" style="background: url(/static/img/widget-titBg.png) no-repeat;">
 
                                         <p class="top-tit"><a href="">Redis从入门到精通</a></p>
-                                        <p class="top-lab">传智播客</p>
+                                        <p class="top-lab">学成在线</p>
                                         <p class="top-num">2589646次播放<span>4.8分</span></p>
 
                                     </div>
@@ -293,7 +293,7 @@
                             <div class="item-right">
                                 <p class="title">如何用微服务重构应用程序?</p>
                                 <p><span>我来回答</span></p>
-                                <p>2017-3-20 <span><i></i>回答2</span><span><i></i>浏览2</span></p>
+                                <p>2020-2-2 <span><i></i>回答2</span><span><i></i>浏览2</span></p>
                             </div>
                         </div>
                         <div class="item">
@@ -304,7 +304,7 @@
                             <div class="item-right">
                                 <p class="title">如何用微服务重构应用程序?</p>
                                 <p>在讨论如何将重构转化为微服务之前，退后一步，仔细观察微服务的内容和时间是很重要的。以下两个要点将会对任何微服务重构策略产生重大影响。 【最新 <i class="new">心跳347890</i> 的回答】</p>
-                                <p>2017-3-20 <span class="action-box"><span><i class="i-answer"></i>回答 2</span><span><i class="i-browse"></i>浏览 12</span></span>
+                                <p>2020-2-2 <span class="action-box"><span><i class="i-answer"></i>回答 2</span><span><i class="i-browse"></i>浏览 12</span></span>
                                 </p>
                             </div>
                         </div>
@@ -316,7 +316,7 @@
                             <div class="item-right">
                                 <p class="title">如何用微服务重构应用程序?</p>
                                 <p>在讨论如何将重构转化为微服务之前，退后一步，仔细观察微服务的内容和时间是很重要的。以下两个要点将会对任何微服务重构策略产生重大影响。 【最新 <i class="new">心跳347890</i> 的回答】</p>
-                                <p>2017-3-20 <span class="action-box"><span><i class="i-answer"></i>回答 2</span><span><i class="i-browse"></i>浏览 12</span></span>
+                                <p>2020-2-2 <span class="action-box"><span><i class="i-answer"></i>回答 2</span><span><i class="i-browse"></i>浏览 12</span></span>
                                 </p>
                             </div>
                         </div>
@@ -328,7 +328,7 @@
                             <div class="item-right">
                                 <p class="title">如何用微服务重构应用程序?</p>
                                 <p>在讨论如何将重构转化为微服务之前，退后一步，仔细观察微服务的内容和时间是很重要的。以下两个要点将会对任何微服务重构策略产生重大影响。 【最新 <i class="new">心跳347890</i> 的回答】</p>
-                                <p>2017-3-20 <span class="action-box"><span><i class="i-answer"></i>回答 2</span><span><i class="i-browse"></i>浏览 12</span></span>
+                                <p>2020-2-2 <span class="action-box"><span><i class="i-answer"></i>回答 2</span><span><i class="i-browse"></i>浏览 12</span></span>
                                 </p>
                             </div>
                         </div>
@@ -340,7 +340,7 @@
                             <div class="item-right">
                                 <p class="title">如何用微服务重构应用程序?</p>
                                 <p>在讨论如何将重构转化为微服务之前，退后一步，仔细观察微服务的内容和时间是很重要的。以下两个要点将会对任何微服务重构策略产生重大影响。 【最新 <i class="new">心跳347890</i> 的回答】</p>
-                                <p>2017-3-20 <span class="action-box"><span><i class="i-answer"></i>回答 2</span><span><i class="i-browse"></i>浏览 12</span></span>
+                                <p>2020-2-2 <span class="action-box"><span><i class="i-answer"></i>回答 2</span><span><i class="i-browse"></i>浏览 12</span></span>
                                 </p>
                             </div>
                         </div>
@@ -352,7 +352,7 @@
                             <div class="item-right">
                                 <p class="title">如何用微服务重构应用程序?</p>
                                 <p>在讨论如何将重构转化为微服务之前，退后一步，仔细观察微服务的内容和时间是很重要的。以下两个要点将会对任何微服务重构策略产生重大影响。 【最新 <i class="new">心跳347890</i> 的回答】</p>
-                                <p>2017-3-20 <span class="action-box"><span><i class="i-answer"></i>回答 2</span><span><i class="i-browse"></i>浏览 12</span></span>
+                                <p>2020-2-2 <span class="action-box"><span><i class="i-answer"></i>回答 2</span><span><i class="i-browse"></i>浏览 12</span></span>
                                 </p>
                             </div>
                         </div>
@@ -367,7 +367,7 @@
                         <div class="teach-info">
                             <!--机构logo-->
                             <img src="/static/img/asset-logo.png" width="40px" alt="">
-                            <p>北京传智播客教育集团</p>
+                            <p>学成在线教育集团</p>
                         </div>
                         <div class="teach-info">
                             <ul class="tree-list">
@@ -380,7 +380,7 @@
                             <p><a href="#" class="courselist_link">TA的课程</a></p>
                         </div>
 
-                        <p class="synopsis">传智播客是一家专门致力于高素质软件开发人才培养的高科技公司。传智播客致力于为企业优选一流的人才的培训理念，以“学员自学入门教程，通过基础考核后进行强化培训”为招生原则，以“针对企业需求，重视基础理论建设，强化高端应用技能”为教学目标，以“高薪保证强大的资深教育团队”为教学后盾，彻底解决所有培训学员的后顾之忧，并解决用人企业难以招聘到合格人才的困扰。</p>
+                        <p class="synopsis">学成在线是一家专门致力于高素质软件开发人才培养的高科技公司。学成在线致力于为企业优选一流的人才的培训理念，以“学员自学入门教程，通过基础考核后进行强化培训”为招生原则，以“针对企业需求，重视基础理论建设，强化高端应用技能”为教学目标，以“高薪保证强大的资深教育团队”为教学后盾，彻底解决所有培训学员的后顾之忧，并解决用人企业难以招聘到合格人才的困扰。</p>
                     </div>
                     <div class="learing-box">
                         <div class="tit">看过该课的同学也在看</div>
@@ -390,7 +390,7 @@
                                     <div class="morebox" style="background: url(/static/img/widget-titBg.png) no-repeat;">
 
                                         <p class="top-tit"><a href="">Linux 达人养成记</a></p>
-                                        <p class="top-lab">传智播客</p>
+                                        <p class="top-lab">学成在线</p>
                                         <p class="top-num">2589646次播放<span>4.8分</span></p>
 
                                     </div>
@@ -402,7 +402,7 @@
                                     <div class="morebox" style="background: url(/static/img/widget-titBg.png) no-repeat;">
 
                                         <p class="top-tit"><a href="">Redis从入门到精通</a></p>
-                                        <p class="top-lab">传智播客</p>
+                                        <p class="top-lab">学成在线</p>
                                         <p class="top-num">2589646次播放<span>4.8分</span></p>
 
                                     </div>
@@ -493,7 +493,7 @@
                                     </div>
                                     <div class="item-cent">
                                         <p>很受用，如果再深入下就更好了。虽然都是入门级别的，但是也很使用，后续就需要自己发挥了！虽然都是入门级别的，但是也很使用，后续就需要自己发挥了！虽然都是入门级别的，但是也很使用，后续就需要自己发挥了！虽然都是入门级别的，但是也很使用，后续就需要自己发挥了！</p>
-                                        <p class="time">2017-2-43</p>
+                                        <p class="time">2020-2-4</p>
                                     </div>
                                     <div class="item-rit">
                                         <p>
@@ -511,7 +511,7 @@
                                     </div>
                                     <div class="item-cent">
                                         <p>很受用，如果再深入下就更好了。虽然都是入门级别的，但是也很使用，后续就需要自己发挥了！虽然都是入门级别的，但是也很使用，后续就需要自己发挥了！虽然都是入门级别的，但是也很使用，后续就需要自己发挥了！虽然都是入门级别的，但是也很使用，后续就需要自己发挥了！</p>
-                                        <p class="time">2017-2-43</p>
+                                        <p class="time">2020-2-2</p>
                                     </div>
                                     <div class="item-rit">
                                         <p>
@@ -529,7 +529,7 @@
                                     </div>
                                     <div class="item-cent">
                                         <p>很受用，如果再深入下就更好了。虽然都是入门级别的，但是也很使用，后续就需要自己发挥了！虽然都是入门级别的，但是也很使用，后续就需要自己发挥了！虽然都是入门级别的，但是也很使用，后续就需要自己发挥了！虽然都是入门级别的，但是也很使用，后续就需要自己发挥了！</p>
-                                        <p class="time">2017-2-43</p>
+                                        <p class="time">2020-2-2</p>
                                     </div>
                                     <div class="item-rit">
                                         <p>
@@ -547,7 +547,7 @@
                                     </div>
                                     <div class="item-cent">
                                         <p>很受用，如果再深入下就更好了。虽然都是入门级别的，但是也很使用，后续就需要自己发挥了！虽然都是入门级别的，但是也很使用，后续就需要自己发挥了！虽然都是入门级别的，但是也很使用，后续就需要自己发挥了！虽然都是入门级别的，但是也很使用，后续就需要自己发挥了！</p>
-                                        <p class="time">2017-2-43</p>
+                                        <p class="time">2020-2-2</p>
                                     </div>
                                     <div class="item-rit">
                                         <p>
@@ -568,7 +568,7 @@
                         <div class="teach-info">
                             <!--机构logo-->
                             <img src="/static/img/asset-logo.png" width="40px" alt="">
-                            <p>北京传智播客教育集团</p>
+                            <p>北京学成在线教育集团</p>
                         </div>
                         <div class="teach-info">
                             <ul class="tree-list">
@@ -581,7 +581,7 @@
                             <p><a href="#" class="courselist_link">TA的课程</a></p>
                         </div>
 
-                        <p class="synopsis">传智播客是一家专门致力于高素质软件开发人才培养的高科技公司。传智播客致力于为企业优选一流的人才的培训理念，以“学员自学入门教程，通过基础考核后进行强化培训”为招生原则，以“针对企业需求，重视基础理论建设，强化高端应用技能”为教学目标，以“高薪保证强大的资深教育团队”为教学后盾，彻底解决所有培训学员的后顾之忧，并解决用人企业难以招聘到合格人才的困扰。</p>
+                        <p class="synopsis">学成在线是一家专门致力于高素质软件开发人才培养的高科技公司。学成在线致力于为企业优选一流的人才的培训理念，以“学员自学入门教程，通过基础考核后进行强化培训”为招生原则，以“针对企业需求，重视基础理论建设，强化高端应用技能”为教学目标，以“高薪保证强大的资深教育团队”为教学后盾，彻底解决所有培训学员的后顾之忧，并解决用人企业难以招聘到合格人才的困扰。</p>
                     </div>
                     <div class="learing-box">
                         <div class="tit">看过该课的同学也在看</div>
@@ -591,7 +591,7 @@
                                     <div class="morebox" style="background: url(/static/img/widget-titBg.png) no-repeat;">
 
                                         <p class="top-tit"><a href="">Linux 达人养成记</a></p>
-                                        <p class="top-lab">传智播客</p>
+                                        <p class="top-lab">学成在线</p>
                                         <p class="top-num">2589646次播放<span>4.8分</span></p>
 
                                     </div>
@@ -603,7 +603,7 @@
                                     <div class="morebox" style="background: url(/static/img/widget-titBg.png) no-repeat;">
 
                                         <p class="top-tit"><a href="">Redis从入门到精通</a></p>
-                                        <p class="top-lab">传智播客</p>
+                                        <p class="top-lab">学成在线</p>
                                         <p class="top-num">2589646次播放<span>4.8分</span></p>
 
                                     </div>
